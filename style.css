@@ -2,12 +2,14 @@ html,body {margin: 0;padding: 0;height: 100%;color: #333;background: #f5f5f5;fon
 * { box-sizing: border-box; }
 body { display: flex; flex-direction: column; }
 
-header {padding: 1em;border-bottom: 1px solid #125492;font-weight: 500;}
+header {padding: 1em;border-bottom: 1px solid #125492;font-weight: 300;background: #36454f;color: #fff;}
 
 h1, h2, h3  {color: #125492; font-weight: 300; line-height: 1em;}
 h1  {font-size: 32px;font-weight: 300;line-height: 1em;text-align: center;margin-top: 1.5em;}
 h2 {font-size: 24px;}
 
+header span.title {display: block;font-size: 0.7em;color: #bbb;vertical-align: middle;}
+header span.title span {font-size: 0.8em;vertical-align: middle;}
 
 main { padding: 1em 2em; margin: 0 auto; max-width: 920px}
 
