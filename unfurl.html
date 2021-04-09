@@ -6,11 +6,9 @@
 </head>
 <body>
 <script>
-window.setTimeout(function(){
   document.title = document.location.search.split('title=')[1].split('&')[0];
   const desc = document.location.search.split('desc=')[1].split('&')[0];
   document.querySelector('meta[name="description"]').setAttribute("content", desc);
-}, 1000)
 </script>
 </body>
 </html>
