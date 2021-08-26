@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Title Here</title>
+  <meta name="description" content="Description here" />
+  <link rel="alternate" type="application/json+oembed"
+        href="https://jm-oembed-unfurl.herokuapp.com/?title=oEmbedTitle&desc=oEmbed%20Description"
+        title="Link Title Attr" />
+</head>
+<body>
+<script>
+  document.title = document.location.search.split('title=')[1].split('&')[0];
+  const desc = document.location.search.split('desc=')[1].split('&')[0];
+  document.querySelector('meta[name="description"]').setAttribute("content", desc);
+</script>
+</body>
+</html>
