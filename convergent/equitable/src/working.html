@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Equitable</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+        main {
+            max-width: 580px;
+            min-width: 460px;
+            margin: 0 auto;
+        }
+        img.logo {
+            display: block;
+            margin: 2em auto 1em auto;
+        }
+        header {
+            margin-bottom: .5em;
+            padding: 2em;
+            background: #00DAA7;
+            background-image: url('img/hero_short.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 100% center;
+        }
+        header h1 {
+            background-color: #fff;
+            padding: 1em 1em 2em 1em;
+            font-size: 26px;
+            font-weight: normal;
+            color: #002677;
+            width: 50%;
+        }
+        .body {
+            padding: 0 2em;
+        }
+        .body p.main {
+            font-size: 20px;
+            font-weight: normal;
+            color: #002677;
+        }
+        .body p.note {
+            font-size: 18px;
+            color: #3369FF;
+        }
+        .body a {
+            display: block;
+            margin: 2em 0;
+            text-decoration: none;
+            overflow: hidden;
+            width: 100%;
+        }
+        .body a .wrap {
+            display: block;
+            text-align: center;
+            width: 165px;
+            padding: 1em 40px 0.5em 2em;
+            color: #fff;
+            background-color: #002678;
+            position: relative;
+        }
+        .body a .wrap svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .body a .wrap > span {
+            display: block;
+            margin: 1em 0;
+        }
+        a.qualified .wrap {
+            clip-path: url('#clip-qualified');
+        }
+        a.non-qualified .wrap {
+            clip-path: url('#clip-non-qualified');
+        }
+        a.qualified {
+            background-image: url('img/hero_qualified.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 100% center;
+        }
+        a.non-qualified {
+            background-image: url('img/hero_non_qualified.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 0 center;
+        }
+        a.non-qualified .wrap {
+            margin-left: auto; 
+        }
+        a .btn {
+            white-space: nowrap;
+            background-color: #3469FF;
+            padding: .2em 1.2em;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+        }
+        a img {
+            height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img class="logo vertical" src="img/EQ-logo-stacked-blue.svg" alt="Equitable" height="60">
+        <header>
+            <h1>Effortless<br /> Management for your<br /> Qualified and<br /> Non-Qualified Plans</h1>
+        </header>
+        <div class="body">
+            <p class="main">Equitable makes it easy to view and manage your qualified and non-qualified plans.</p>
+            <p class="note">Let's get you to the right place...</p>
+
+            <a href="https://retirementsolutions.financialtrans.com/tf/myPLAN/SponsorWelcome?cz=3002300" 
+               rel="noopener noreferrer"
+               class="qualified">
+                <span class="wrap">
+                    <strong>Qualified Plan Access</strong>
+                    <p>Access your plan sponsor's 401(k) and 403(b) plan information</p>
+                    <span><span class="btn">Take Me</span></span>
+                    <span><img src="img/EQ-logo-horizontal-white.svg" alt="Equitable" /></span>
+                    <svg>
+                        <defs>
+                        <clipPath id="clip-qualified">
+                            <circle cx="-15" cy="50%" r="250.625" />
+                            <rect x="0" y="0" width="100" height="100%" />
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </span> 
+            </a>
+
+            <a href="https://auth.equitable.com/login/ces?destURL=%2Fsso%2Finternal%2Fcesclient"
+               rel="noopener noreferrer"
+               class="non-qualified">
+               <span class="wrap">
+                    <strong>Non-Qualified Plan Access</strong>
+                    <p>View your Life Income Plans&#8480; 409(a) plan values documents</p>
+                    <span><span class="btn">Take Me</span></span>
+                    <span><img src="img/cesa_logo.png" alt="CESA" /></span>
+                    <svg>
+                        <defs>
+                        <clipPath id="clip-non-qualified">
+                            <circle cx="250" cy="50%" r="250.625" />
+                            <rect x="60" y="0" width="100" height="100%" />
+                        </clipPath>
+                        </defs>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </main>
+   
+</body>
+</html>
